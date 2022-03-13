@@ -1,0 +1,95 @@
+body {
+    color: black;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #d3f5f7; 
+}
+
+#documentation {
+    color: #d3f5f7; 
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid #2c2c2c;
+    background-color: #2c2c2c;
+    padding: 10px;
+    margin-left: -5px;
+    margin-top: -10px;
+}
+
+@media (max-width: 500px) {
+    #documentation {
+        position: fixed;
+        width: 100%;
+        z-index: 2; /* should be above the @media code */
+    }
+}
+#navbar {
+    position: fixed;
+}
+
+.nav-ul {
+    list-style: none;
+    margin-left: -45px;
+}
+
+@media (max-width: 500px) {
+    .nav-ul {
+        max-width: 30%;
+        position: fixed;
+        margin-top: 11%; 
+    }
+}
+
+.nav-ul > li {
+    border: 1px solid #2c2c2c;
+    background-color: #2c2c2c;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+a {
+    color: #d3f5f7; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #d3f5f7;
+    text decoration: none;
+}
+
+#main-doc {
+    margin-left: 250px;
+    margin-right: 50px;
+}
+
+@media (max-width: 500px) {
+    #main-doc {
+        margin-left: 30%;
+        margin-right: 5%;
+    }
+}
+
+code {
+    display: block;
+    text-align: left;
+    font-style: italic;
+    background-color: #2c2c2c;
+    padding: 15px;
+    margin: 5px; 
+    border-radius: 1px;
+    color: #d3f5f7; 
+}
+
+@media (max-width: 500px) {
+    code {
+        z-index: 1; /* should be below the @media #documentation */
+    }
+}
+
+.main-section > header {
+    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
